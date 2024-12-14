@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-link {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .login-link a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            text-align: left;
+            margin: 10px 0 5px;
+            font-size: 16px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            background-color: #e3e3e3;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #e3e3e3;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: #d5d5d5;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-link">
+            <a href="login.html">Log in</a>
+        </div>
+        <h1>Sign up</h1>
+        <form action="#" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            
+            <div id="error-message" class="error-message"></div>
+            
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password !== confirmPassword) {
+                event.preventDefault();
+                alert('Passwords do not match!');
+            }
+        });
+    </script>
+</body>
+</html>
