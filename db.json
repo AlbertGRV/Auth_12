@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "email": "mail@example.com",
+      "password": "$2a$10$yJF5kLa5JnaTmCjNRcKhu9.y4533tZW82JsIbZkJ3mmyZfFik.",
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "username": "уцац",
+      "email": "e7dap7ep@gmail.com",
+      "password": "1233",
+      "registrationDate": "2024-12-25"
+    },
+    {
+      "username": "уцацfebv",
+      "email": "e7daprf7ep@gmail.com",
+      "password": "12335",
+      "registrationDate": "2024-12-25"
+    },
+    {
+      "username": "уцацfebv32fs",
+      "email": "e7dafwwprf7ep@gmail.com",
+      "password": "12335efrfrfrfrfr",
+      "registrationDate": "2024-12-25"
+    },
+    {
+      "username": "уцwdацfebv32fs",
+      "email": "e7dawedfwwprf7ep@gmail.com",
+      "password": "12335efrfrfrfrfr",
+      "registrationDate": "2024-12-25"
+    },
+    {
+      "username": "diamond",
+      "email": "test@example.uss",
+      "password": "1234",
+      "registrationDate": "2024-12-25"
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "name": "#todo 1",
+      "text": "\"bla bla\"",
+      "userId": 1,
+      "tagsId": [
+        1
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "to-do"
+    },
+    {
+      "id": 2,
+      "name": "to-buy"
+    }
+  ]
+}
